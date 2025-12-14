@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-cosmic-900 text-white font-sans overflow-x-hidden;
+  }
+}
+
+/* Custom scrollbar if needed */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-cosmic-900;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-cosmic-600 rounded-full;
+}
