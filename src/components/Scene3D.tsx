@@ -2,7 +2,7 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Stage, useGLTF } from '@react-three/drei';
 
 function Model() {
-    const gltf = useGLTF('/CanSat001.glb');
+    const gltf = useGLTF(import.meta.env.BASE_URL + 'CanSat001.glb');
     return <primitive object={gltf.scene} scale={0.5} />; // Renderiza el modelo
 }
 
